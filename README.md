@@ -6,9 +6,9 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
 
 ## 📇 Profiles
 
-- **GitHub:** [hardik0903](https://github.com/hardik0903)  
-- **LinkedIn:** [Hardik Pandey](https://www.linkedin.com/in/hardik-pandey-4a836628a/)
-
+- [![GitHub followers](https://img.shields.io/github/followers/hardik0903?style=social)](https://github.com/hardik0903)  
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-HardikPandey-blue?logo=linkedin)](https://www.linkedin.com/in/hardik-pandey-4a836628a/)  
+- [![Email](https://img.shields.io/badge/Email-hardikpandey0903@gmail.com-c14438?logo=gmail)](mailto:hardikpandey0903@gmail.com)
 ---
 
 ## 📅 Table of Contents
