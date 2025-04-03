@@ -15,7 +15,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
 
 - [Introduction](#introduction)
 - [Challenge Overview](#challenge-overview)
-  - [Day 1: Second Largest Element](#day-1-second-largest-element)(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
+  - [Day 1: Second Largest Element](#day-1-second-largest-element)
   - [Day 2: Move All Zeroes to End](#day-2-move-all-zeroes-to-end)
   - [Day 3: Reverse An Array](#day-3-reverse-an-array)
   - [Day 4: Rotate Array](#day-4-rotate-array)
@@ -32,6 +32,7 @@ Hello! I'm Hardik, a passionate coder who loves challenges and problem solving. 
 ## Challenge Overview
 
 ### Day 1: Second Largest Element
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
 
 An easy but tricky problem solved through a straightforward approach.  
 **Problem:** Find the second largest element in an array.  
@@ -49,6 +50,7 @@ An easy but tricky problem solved through a straightforward approach.
 ---
 
 ### Day 2: Move All Zeroes to End
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/move-all-zeroes-to-end-of-array0751
 
 A fun problem that reinforces the concept of array manipulation.  
 **Problem:** Rearrange the array so that all zeroes are moved to the end while maintaining the order of non-zero elements.  
@@ -63,6 +65,7 @@ A fun problem that reinforces the concept of array manipulation.
 ---
 
 ### Day 3: Reverse An Array
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/reverse-an-array
 
 A classic problem whose solution is foundational for many other challenges.  
 **Problem:** Reverse the order of elements in an array.  
@@ -76,6 +79,7 @@ A classic problem whose solution is foundational for many other challenges.
 ---
 
 ### Day 4: Rotate Array
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/rotate-array-by-n-elements-1587115621
 
 A variation of the classic array rotation problem with a twist inspired by a LeetCode challenge.  
 **Problem:** Rotate the array by a given number of positions using a modified approach.  
