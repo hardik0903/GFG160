@@ -15,7 +15,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
 
 - [Introduction](#introduction)
 - [Challenge Overview](#challenge-overview)
-  - [Day 1: Second Largest Element](#day-1-second-largest-element)
+  - [Day 1: Second Largest Element](#day-1-second-largest-element)(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
   - [Day 2: Move All Zeroes to End](#day-2-move-all-zeroes-to-end)
   - [Day 3: Reverse An Array](#day-3-reverse-an-array)
   - [Day 4: Rotate Array](#day-4-rotate-array)
