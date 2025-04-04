@@ -19,6 +19,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 2: Move All Zeroes to End](#day-2-move-all-zeroes-to-end)
   - [Day 3: Reverse An Array](#day-3-reverse-an-array)
   - [Day 4: Rotate Array](#day-4-rotate-array)
+  - [Day 5: Next Permutation](#day-5-next-permutation)
 - [Conclusion](#conclusion)
 
 ---
