@@ -95,7 +95,7 @@ A variation of the classic array rotation problem with a twist inspired by a Lee
 
 ---
 
-### Day 5: Next Permuatation
+### Day 5: Next Permutation
 https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/next-permutation5226
 
 An easy optimal approach but difficulty in Brute-force approach as requires backtracking skills, whereas better uses swaping method.
