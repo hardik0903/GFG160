@@ -94,6 +94,19 @@ A variation of the classic array rotation problem with a twist inspired by a Lee
 
 ---
 
+### Day 5: Next Permuatation
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/next-permutation5226
+
+An easy optimal approach but difficulty in Brute-force approach as requires backtracking skills, whereas better uses swaping method.
+**Problem:** Calculate the Next Permuattaion of the given array.
+**Approach (PseudoCode):**
+
+1. **Loop:** Use loop from 2nd Last Index to 0 to find longer prefix Match
+2. **Condition:** If None is occured, just reverse the array
+3. **Loop:** Again Loop fron last to index position of longer prefix match and according to condition swap
+
+---
+
 ## Conclusion
 
 This README summarizes my approach to the initial days of the **GFG160 Days Challenge**. Each day presents a unique problem and an opportunity to learn and grow as a coder. I look forward to sharing more insights and solutions as I progress through this exciting challenge! 🚀
