@@ -19,6 +19,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 2: Move All Zeroes to End](#day-2-move-all-zeroes-to-end)
   - [Day 3: Reverse An Array](#day-3-reverse-an-array)
   - [Day 4: Rotate Array](#day-4-rotate-array)
+  - [Day 5: Next Permutation](#day-5-next-permutation)
 - [Conclusion](#conclusion)
 
 ---
@@ -91,6 +92,19 @@ A variation of the classic array rotation problem with a twist inspired by a Lee
    - Reverse the remaining portion.
    - Reverse the entire array.
 3. **Note:** The order of operations is adjusted from the standard LeetCode approach (i.e., from steps 1, 2, 3 to 2, 3, 1) as per GFG requirements. 🔄➡️
+
+---
+
+### Day 5: Next Permutation
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/next-permutation5226
+
+An easy optimal approach but difficulty in Brute-force approach as requires backtracking skills, whereas better uses swaping method.
+**Problem:** Calculate the Next Permuattaion of the given array.
+**Approach (PseudoCode):**
+
+1. **Loop:** Use loop from 2nd Last Index to 0 to find longer prefix Match
+2. **Condition:** If None is occured, just reverse the array
+3. **Loop:** Again Loop fron last to index position of longer prefix match and according to condition swap
 
 ---
 
