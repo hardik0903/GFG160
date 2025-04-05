@@ -9,6 +9,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
 - [![GitHub followers](https://img.shields.io/github/followers/hardik0903?style=social)](https://github.com/hardik0903)  
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-HardikPandey-blue?logo=linkedin)](https://www.linkedin.com/in/hardik-pandey-4a836628a/)  
 - [![Email](https://img.shields.io/badge/Email-hardikpandey0903@gmail.com-c14438?logo=gmail)](mailto:hardikpandey0903@gmail.com)
+
 ---
 
 ## 📅 Table of Contents
@@ -20,6 +21,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 3: Reverse An Array](#day-3-reverse-an-array)
   - [Day 4: Rotate Array](#day-4-rotate-array)
   - [Day 5: Next Permutation](#day-5-next-permutation)
+  - [Day 6: Majority Element II](#day-6-majority-element-ii)
 - [Conclusion](#conclusion)
 
 ---
@@ -32,7 +34,7 @@ Hello! I'm Hardik, a passionate coder who loves challenges and problem solving. 
 
 ## Challenge Overview
 
-### Day 1: Second Largest Element
+### Day 1: Second Largest Element  
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
 
 An easy but tricky problem solved through a straightforward approach.  
@@ -50,8 +52,8 @@ An easy but tricky problem solved through a straightforward approach.
 
 ---
 
-### Day 2: Move All Zeroes to End
-https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/move-all-zeroes-to-end-of-array0751
+### Day 2: Move All Zeroes to End  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/move-all-zeroes-to-end-of-array0751)
 
 A fun problem that reinforces the concept of array manipulation.  
 **Problem:** Rearrange the array so that all zeroes are moved to the end while maintaining the order of non-zero elements.  
@@ -65,8 +67,8 @@ A fun problem that reinforces the concept of array manipulation.
 
 ---
 
-### Day 3: Reverse An Array
-https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/reverse-an-array
+### Day 3: Reverse An Array  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/reverse-an-array)
 
 A classic problem whose solution is foundational for many other challenges.  
 **Problem:** Reverse the order of elements in an array.  
@@ -79,8 +81,8 @@ A classic problem whose solution is foundational for many other challenges.
 
 ---
 
-### Day 4: Rotate Array
-https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/rotate-array-by-n-elements-1587115621
+### Day 4: Rotate Array  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/rotate-array-by-n-elements-1587115621)
 
 A variation of the classic array rotation problem with a twist inspired by a LeetCode challenge.  
 **Problem:** Rotate the array by a given number of positions using a modified approach.  
@@ -95,16 +97,44 @@ A variation of the classic array rotation problem with a twist inspired by a Lee
 
 ---
 
-### Day 5: Next Permutation
-https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/next-permutation5226
+### Day 5: Next Permutation  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/next-permutation5226)
 
-An easy optimal approach but difficulty in Brute-force approach as requires backtracking skills, whereas better uses swaping method.
-**Problem:** Calculate the Next Permuattaion of the given array.
+An easy optimal approach but difficulty in brute-force approach as it requires backtracking skills, whereas a better approach uses swapping.  
+**Problem:** Calculate the next permutation of the given array.  
 **Approach (PseudoCode):**
 
-1. **Loop:** Use loop from 2nd Last Index to 0 to find longer prefix Match
-2. **Condition:** If None is occured, just reverse the array
-3. **Loop:** Again Loop fron last to index position of longer prefix match and according to condition swap
+1. **Loop:** Start from the second last index and move backwards to find the first element that is smaller than its next element.
+2. **Condition:** If such an element is not found, reverse the entire array.
+3. **Loop:** Otherwise, from the end of the array, find the first element that is greater than this identified element and swap them.
+4. **Finally:** Reverse the subarray following the swapped element's original position.
+5. **Result:** The array is updated to its next permutation.
+
+---
+
+### Day 6: Majority Element II  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/majority-vote)
+
+A problem that extends the Boyer-Moore Voting Algorithm(Majority-Element I).  
+**Problem:** Find all elements in the array that appear more than ⌊n/3⌋ times.  
+**Approach (PseudoCode):**
+
+1. **Initialize:**  
+   - Two candidate variables `el1` and `el2` (e.g., set to `INT_MIN`).
+   - Two counters `count1` and `count2` set to 0.
+2. **Candidate Selection:**  
+   - **Iterate** over the array:
+     - If the current element equals `el1`, increment `count1`.
+     - Else if it equals `el2`, increment `count2`.
+     - Else if `count1` is 0, set `el1` to the current element and `count1` to 1.
+     - Else if `count2` is 0, set `el2` to the current element and `count2` to 1.
+     - Else, decrement both `count1` and `count2`.
+3. **Validation:**  
+   - Reset `count1` and `count2` to 0.
+   - **Iterate** over the array to count the occurrences of `el1` and `el2`.
+   - **Check:** If `count1` is greater than ⌊n/3⌋, add `el1` to the result.
+   - **Check:** If `count2` is greater than ⌊n/3⌋, add `el2` to the result.
+4. **Result:** Return the list of majority elements.
 
 ---
 
@@ -113,7 +143,5 @@ An easy optimal approach but difficulty in Brute-force approach as requires back
 This README summarizes my approach to the initial days of the **GFG160 Days Challenge**. Each day presents a unique problem and an opportunity to learn and grow as a coder. I look forward to sharing more insights and solutions as I progress through this exciting challenge! 🚀
 
 > **Happy Coding!**
-
----
 
 *Feel free to explore my repositories and connect with me on GitHub or LinkedIn.*
