@@ -22,6 +22,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 4: Rotate Array](#day-4-rotate-array)
   - [Day 5: Next Permutation](#day-5-next-permutation)
   - [Day 6: Majority Element II](#day-6-majority-element-ii)
+  - [Day 7: Stock Buy and Sell – Multiple Transaction Allowed](#day-7-stock-buy-and-sell--multiple-transaction-allowed)
 - [Conclusion](#conclusion)
 
 ---
@@ -115,7 +116,7 @@ An easy optimal approach but difficulty in brute-force approach as it requires b
 ### Day 6: Majority Element II  
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/majority-vote)
 
-A problem that extends the Boyer-Moore Voting Algorithm(Majority-Element I).  
+A problem that extends the Boyer-Moore Voting Algorithm (Majority-Element I).  
 **Problem:** Find all elements in the array that appear more than ⌊n/3⌋ times.  
 **Approach (PseudoCode):**
 
@@ -135,6 +136,26 @@ A problem that extends the Boyer-Moore Voting Algorithm(Majority-Element I).
    - **Check:** If `count1` is greater than ⌊n/3⌋, add `el1` to the result.
    - **Check:** If `count2` is greater than ⌊n/3⌋, add `el2` to the result.
 4. **Result:** Return the list of majority elements.
+
+---
+
+### Day 7: Stock Buy and Sell – Multiple Transaction Allowed  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/stock-buy-and-sell2615)
+
+This challenge focuses on maximizing profit by allowing multiple stock transactions. 📈  
+**Problem:** Given an array of stock prices where the index represents the day, find the maximum profit that can be earned by making multiple buy-sell transactions.  
+**Approach (PseudoCode):**
+
+1. **Initialize:**  
+   - A variable `profit` to 0.
+2. **Iterate:**  
+   - Loop through the array from day 1 to the last day.
+3. **Check:**  
+   - For each day, if the price of the current day is greater than the previous day, it indicates an opportunity for profit.
+4. **Accumulate:**  
+   - Add the difference (current day price minus previous day price) to `profit`.
+5. **Result:**  
+   - The accumulated `profit` is the maximum profit obtainable. 💰
 
 ---
 
