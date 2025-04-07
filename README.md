@@ -23,6 +23,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 5: Next Permutation](#day-5-next-permutation)
   - [Day 6: Majority Element II](#day-6-majority-element-ii)
   - [Day 7: Stock Buy and Sell – Multiple Transaction Allowed](#day-7-stock-buy-and-sell--multiple-transaction-allowed)
+  - [Day 8: Stock Buy and Sell – Max one Transaction Allowed](#day-8-stock-buy-and-sell--max-one-transaction-allowed)
 - [Conclusion](#conclusion)
 
 ---
@@ -156,6 +157,26 @@ This challenge focuses on maximizing profit by allowing multiple stock transacti
    - Add the difference (current day price minus previous day price) to `profit`.
 5. **Result:**  
    - The accumulated `profit` is the maximum profit obtainable. 💰
+
+---
+
+### Day 8: Stock Buy and Sell – Max one Transaction Allowed  
+(https://www.geeksforgeeks.org/problems/buy-stock-2/0)
+
+A well-known optimization problem involving dynamic programming or a greedy approach.  
+**Problem:** Given an array representing stock prices on each day, find the maximum profit that can be made by buying and selling the stock **once**.  
+**Approach (PseudoCode):**
+
+1. **Initialize:**  
+   - A variable `minPrice` to store the minimum stock price seen so far (initially set to a very large value).
+   - A variable `maxProfit` to store the maximum profit (initially set to 0).
+2. **Iterate:**  
+   - Loop through each day's stock price.
+3. **Check:**  
+   - If the current price is less than `minPrice`, update `minPrice`.
+   - Else, calculate profit = current price - `minPrice`, and update `maxProfit` if this profit is greater.
+4. **Result:**  
+   - The value in `maxProfit` is the maximum profit achievable with one transaction. 📊
 
 ---
 
