@@ -24,6 +24,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 6: Majority Element II](#day-6-majority-element-ii)
   - [Day 7: Stock Buy and Sell – Multiple Transaction Allowed](#day-7-stock-buy-and-sell--multiple-transaction-allowed)
   - [Day 8: Stock Buy and Sell – Max one Transaction Allowed](#day-8-stock-buy-and-sell--max-one-transaction-allowed)
+  - [Day 9: Minimize the Heights II](#day-9-minimize-the-heights-ii)
 - [Conclusion](#conclusion)
 
 ---
@@ -177,6 +178,26 @@ A well-known optimization problem involving dynamic programming or a greedy appr
    - Else, calculate profit = current price - `minPrice`, and update `maxProfit` if this profit is greater.
 4. **Result:**  
    - The value in `maxProfit` is the maximum profit achievable with one transaction. 📊
+
+---
+
+### Day 9: Minimize the Heights II  
+[https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/minimize-the-heights3351](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/minimize-the-heights3351)
+
+A greedy-style problem involving height adjustments.  
+**Problem:** Given an array representing tower heights and a value `k`, modify each height by either increasing or decreasing it by `k` and find the minimum difference between the tallest and shortest towers after modification.  
+**Approach (PseudoCode):**
+
+1. **Sort** the array to get a baseline for heights.
+2. **Initialize**:
+   - `minHeight` and `maxHeight` to hold possible extremes after modifications.
+   - `ans` to hold the initial height difference (i.e., `arr[n - 1] - arr[0]`).
+3. **Iterate** from index 1 to n-1:
+   - Skip if subtracting `k` results in negative height.
+   - Calculate new `minHeight = min(arr[0] + k, arr[i] - k)`
+   - Calculate new `maxHeight = max(arr[i - 1] + k, arr[n - 1] - k)`
+   - Update `ans` with the minimum of current `ans` and `maxHeight - minHeight`
+4. **Return:** Final minimized height difference.
 
 ---
 
