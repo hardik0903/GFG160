@@ -25,6 +25,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 7: Stock Buy and Sell – Multiple Transaction Allowed](#day-7-stock-buy-and-sell--multiple-transaction-allowed)
   - [Day 8: Stock Buy and Sell – Max one Transaction Allowed](#day-8-stock-buy-and-sell--max-one-transaction-allowed)
   - [Day 9: Minimize the Heights II](#day-9-minimize-the-heights-ii)
+  - [Day 10: Kadane's Algorithm](#day-10-kadanes-algorithm)
 - [Conclusion](#conclusion)
 
 ---
@@ -201,10 +202,30 @@ A greedy-style problem involving height adjustments.
 
 ---
 
+### Day 10: Kadane's Algorithm  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/kadanes-algorithm-1587115620)
+
+A classic dynamic programming challenge used to find the maximum contiguous subarray sum. 💡  
+**Problem:**  
+Find the contiguous subarray within a one-dimensional array of numbers that has the largest sum.
+
+**Approach (PseudoCode):**
+
+1. **Initialize:**  
+   - `max_sum` with the value of the first element.  
+   - `currentMax` with the value of the first element.
+2. **Iterate:**  
+   - For every element from the second element onward:
+     - Update `currentMax = max(current element, currentMax + current element)` ⚡
+     - Update `maxSoFar = max(max_sum, currentMax)` 🔥
+3. **Result:**  
+   - Return `max_sum` as the maximum subarray sum.
+
+---
+
 ## Conclusion
 
 This README summarizes my approach to the initial days of the **GFG160 Days Challenge**. Each day presents a unique problem and an opportunity to learn and grow as a coder. I look forward to sharing more insights and solutions as I progress through this exciting challenge! 🚀
 
-> **Happy Coding!**
-
+> **Happy Coding!**  
 *Feel free to explore my repositories and connect with me on GitHub or LinkedIn.*
