@@ -26,6 +26,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 8: Stock Buy and Sell – Max one Transaction Allowed](#day-8-stock-buy-and-sell--max-one-transaction-allowed)
   - [Day 9: Minimize the Heights II](#day-9-minimize-the-heights-ii)
   - [Day 10: Kadane's Algorithm](#day-10-kadanes-algorithm)
+  - [Day 11: Maximum Product Subarray](#day-11-maximum-product-subarray)
 - [Conclusion](#conclusion)
 
 ---
@@ -220,6 +221,31 @@ Find the contiguous subarray within a one-dimensional array of numbers that has 
      - Update `maxSoFar = max(max_sum, currentMax)` 🔥
 3. **Result:**  
    - Return `max_sum` as the maximum subarray sum.
+
+---
+
+### Day 11: Maximum Product Subarray  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/maximum-product-subarray3604)
+
+A challenging variation of the maximum subarray sum, where we find the subarray with the **maximum product** instead.  
+**Problem:**  
+Find the contiguous subarray within an array (containing at least one number) which has the largest product.
+
+**Approach (PseudoCode):**
+
+1. **Initialize:**  
+   - `prefixProduct` and `suffixProduct` to 1.  
+   - `maxProduct` to `INT_MIN`.  
+   - `n` as the size of the array.
+2. **Iterate:**  
+   - From `i = 0` to `n-1`:
+     - Multiply `prefixProduct` with `arr[i]`
+     - Multiply `suffixProduct` with `arr[n-i-1]`
+     - Update `maxProduct = max(maxProduct, max(prefixProduct, suffixProduct))`
+     - If `prefixProduct == 0`, reset to 1
+     - If `suffixProduct == 0`, reset to 1
+3. **Result:**  
+   - Return `maxProduct` as the maximum product subarray.
 
 ---
 
