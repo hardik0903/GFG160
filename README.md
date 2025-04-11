@@ -27,6 +27,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 9: Minimize the Heights II](#day-9-minimize-the-heights-ii)
   - [Day 10: Kadane's Algorithm](#day-10-kadanes-algorithm)
   - [Day 11: Maximum Product Subarray](#day-11-maximum-product-subarray)
+  - [Day 12: Max Circular Subarray Sum](#day-12-max-circular-subarray-sum)
 - [Conclusion](#conclusion)
 
 ---
@@ -246,6 +247,24 @@ Find the contiguous subarray within an array (containing at least one number) wh
      - If `suffixProduct == 0`, reset to 1
 3. **Result:**  
    - Return `maxProduct` as the maximum product subarray.
+
+---
+
+### Day 12: Max Circular Subarray Sum  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/max-circular-subarray-sum-1587115620)
+
+A twist on the classic maximum subarray problem where the array is considered circular. 🔄
+
+**Problem:**  
+Find the maximum subarray sum in a circular array.
+
+**Approach (PseudoCode):**
+1. **Compute the total sum** of the array.
+2. **Find the maximum subarray sum** using Kadane's algorithm.
+3. **Find the minimum subarray sum** using a modified version of Kadane's algorithm.
+4. **Determine the result:**
+   - If the total sum equals the minimum subarray sum (i.e., all elements are negative), return the maximum subarray sum.
+   - Otherwise, return the greater value between the normal maximum subarray sum and `(total sum - minimum subarray sum)`. 💥🎉
 
 ---
 
