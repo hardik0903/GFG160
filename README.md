@@ -29,6 +29,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 11: Maximum Product Subarray](#day-11-maximum-product-subarray)
   - [Day 12: Max Circular Subarray Sum](#day-12-max-circular-subarray-sum)
   - [Day 13: Smallest Positive Missing Number](#day-13-smallest-positive-missing-number)
+   - [Day 14: My Atoi Implementation](#day-14-my-atoi-implementation)
 - [Conclusion](#conclusion)
 
 ---
@@ -272,6 +273,32 @@ Identify the smallest positive integer that is not present in the array.
    - If an element greater than `x` is encountered, break the loop since `x` is missing.  
 4. **Result:**  
    - The value of `x` at the end of the loop is the smallest positive missing number. 🚀
+
+---
+
+
+### Day 14: My Atoi Implementation  
+([GFG Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/implement-atoi))
+
+This challenge deals with converting a string to an integer, emulating the behavior of the standard `atoi` function.  
+**Problem:**  
+Implement a function to convert a string into an integer, handling whitespaces, optional signs, numeric digits, and potential overflows correctly.  
+
+**Approach (PseudoCode):**  
+1. **Trim:**  
+   - Remove any leading whitespace characters from the string.  
+2. **Determine Sign:**  
+   - Check for an optional '+' or '-' sign to determine whether the resulting integer should be positive or negative.  
+3. **Convert Digits:**  
+   - Iterate over the subsequent characters as long as they are numeric digits (`'0'` to `'9'`).  
+   - For each digit, convert it to its numeric value and update the result by multiplying the current result by 10 and adding the new digit.  
+4. **Overflow Check:**  
+   - Before updating the result, verify that appending the new digit will not cause an integer overflow.  
+   - If an overflow is detected, return `INT_MAX` for positive numbers or `INT_MIN` for negative numbers, as appropriate.  
+5. **Combine:**  
+   - Multiply the final number by the determined sign to get the correct result.  
+6. **Result:**  
+   - Return the computed integer value.
 
 ---
 
