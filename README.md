@@ -278,7 +278,7 @@ Identify the smallest positive integer that is not present in the array.
 
 
 ### Day 14: My Atoi Implementation  
-([GFG Link](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/implement-atoi))
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/implement-atoi)
 
 This challenge deals with converting a string to an integer, emulating the behavior of the standard `atoi` function.  
 **Problem:**  
