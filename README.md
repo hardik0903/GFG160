@@ -30,6 +30,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 12: Max Circular Subarray Sum](#day-12-max-circular-subarray-sum)
   - [Day 13: Smallest Positive Missing Number](#day-13-smallest-positive-missing-number)
    - [Day 14: My Atoi Implementation](#day-14-my-atoi-implementation)
+   - [Day 15: Add Binary Strings](#day-15-add-binary-strings)
 - [Conclusion](#conclusion)
 
 ---
@@ -299,6 +300,27 @@ Implement a function to convert a string into an integer, handling whitespaces, 
    - Multiply the final number by the determined sign to get the correct result.  
 6. **Result:**  
    - Return the computed integer value.
+
+---
+
+### Day 15: Add Binary Strings 
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/add-binary-strings3805)
+
+**Problem**
+We are given two binary strings `a` and `b`. The task is to compute their sum as a binary string. The strings represent non-negative binary numbers, and the sum should also be in binary form. The challenge includes handling carry, and ensuring that there are no leading zeros in the result.
+
+**Approach (Pseudocode):**
+1. **Reverse both strings**:
+   - In binary addition, we start from the rightmost bit. To simplify, we reverse both strings, so the least significant bit is at the beginning of the string.
+   
+2. **Add corresponding bits and handle carry**:
+   - Initialize a variable `carry` to zero.
+   - Traverse the reversed strings bit by bit, adding corresponding bits. If the sum of the two bits and the carry is greater than 1, set `carry` to 1 for the next iteration; otherwise, set `carry` to 0.
+   - For each addition, append the result to the `res` string (the binary result string).
+   
+3. **Remove leading zeros**:
+   - After calculating the sum, reverse the result string to return the binary number in its correct order.
+   - If the result has any leading zeros, remove them. If the result is all zeros, return "0".
 
 ---
 
