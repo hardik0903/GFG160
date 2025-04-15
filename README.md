@@ -31,6 +31,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 13: Smallest Positive Missing Number](#day-13-smallest-positive-missing-number)
    - [Day 14: My Atoi Implementation](#day-14-my-atoi-implementation)
    - [Day 15: Add Binary Strings](#day-15-add-binary-strings)
+   - [Day 16: Anagram](#day-16-anagram)
 - [Conclusion](#conclusion)
 
 ---
@@ -321,6 +322,28 @@ We are given two binary strings `a` and `b`. The task is to compute their sum as
 3. **Remove leading zeros**:
    - After calculating the sum, reverse the result string to return the binary number in its correct order.
    - If the result has any leading zeros, remove them. If the result is all zeros, return "0".
+
+---
+
+### Day 16: Anagram  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/anagram-1587115620)
+
+This challenge involves checking whether two given strings are anagrams.  
+**Problem:**  
+Given two strings consisting of lowercase characters, determine if they are anagrams of each other. Two strings are anagrams if they have the same characters with the same frequency, but possibly in a different order.
+
+**Approach (PseudoCode):**  
+1. **Length Check:**  
+   - If the lengths of the two strings are different, they cannot be anagrams.  
+2. **Frequency Count:**  
+   - Initialize an array (or hash map) of size 26 (for 'a' to 'z') with all values set to 0.  
+   - Iterate over the first string, and for each character, increment its corresponding counter.  
+   - Iterate over the second string, and for each character, decrement its corresponding counter.  
+3. **Verification:**  
+   - Traverse the frequency array. If any count is not zero, the strings are not anagrams.  
+   - Otherwise, the strings are anagrams.  
+4. **Result:**  
+   - Return true if the strings are anagrams; otherwise, return false.
 
 ---
 
