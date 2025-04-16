@@ -32,6 +32,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
    - [Day 14: My Atoi Implementation](#day-14-my-atoi-implementation)
    - [Day 15: Add Binary Strings](#day-15-add-binary-strings)
    - [Day 16: Anagram](#day-16-anagram)
+   - [Day 17: First Non Repeating Character](#day-17-first-non-repeating-character)
 - [Conclusion](#conclusion)
 
 ---
@@ -344,6 +345,23 @@ Given two strings consisting of lowercase characters, determine if they are anag
    - Otherwise, the strings are anagrams.  
 4. **Result:**  
    - Return true if the strings are anagrams; otherwise, return false.
+
+---
+
+## Day 17: First Non Repeating Character
+
+(https://www.geeksforgeeks.org/problems/non-repeating-character-1587115620/1)
+
+**Problem Statement**:  
+Given a string `S`, find the first non-repeating character in it and return it. If all characters are repeating, then return `-1`.
+
+**Approach**:
+- Use a queue to store characters in order and an array `freq[26]` to track frequency of each character.
+- Traverse the string:
+  - Increment frequency of current character.
+  - Push it into the queue.
+  - While the front of the queue has `freq > 1`, pop it.
+- After the loop, if queue is not empty, return `q.front()`. Otherwise, return `-1`.
 
 ---
 
