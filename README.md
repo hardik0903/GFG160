@@ -33,6 +33,8 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
    - [Day 15: Add Binary Strings](#day-15-add-binary-strings)
    - [Day 16: Anagram](#day-16-anagram)
    - [Day 17: First Non Repeating Character](#day-17-first-non-repeating-character)
+   - [Day 18: Search Pattern](#day-18-search-pattern)  
+  - [Day 19: Minimum Characters to Be Added at Front to Make String Palindrome](#day-19-minimum-characters-to-be-added-at-front-to-make-string-palindrome)  
 - [Conclusion](#conclusion)
 
 ---
@@ -362,6 +364,40 @@ Given a string `S`, find the first non-repeating character in it and return it. 
   - Push it into the queue.
   - While the front of the queue has `freq > 1`, pop it.
 - After the loop, if queue is not empty, return `q.front()`. Otherwise, return `-1`.
+
+---
+
+### Day 18: Search Pattern  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/search-pattern0205)  
+
+**Problem:** Given a text `txt` and a pattern `pat`, find all starting indices of occurrences of `pat` in `txt`.  
+
+**Approach (PseudoCode):**  
+1. **Build LPS:** Compute LPS array for `pat`.  
+2. **Search:**  
+   - Initialize `i = 0, j = 0`.  
+   - While `i < txt.length()`:  
+     - If `txt[i] == pat[j]`: `i++; j++;`  
+     - If `j == pat.length()`:  
+       - Record match at `i - j`  
+       - `j = lps[j - 1]`  
+     - Else if mismatch and `j > 0`:  
+       - `j = lps[j - 1]`  
+     - Else:  
+       - `i++`  
+
+---
+
+### Day 19: Minimum Characters to Be Added at Front to Make String Palindrome  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/minimum-characters-to-be-added-at-front-to-make-string-palindrome)  
+
+**Problem:** Given a string `s`, determine the minimum number of characters to add at the front to make `s` a palindrome.  
+
+**Approach (PseudoCode):**  
+1. Let `rev = reverse(s)`.  
+2. Form `combined = s + "#" + rev`.  
+3. Compute LPS array for `combined`.  
+4. Answer = `s.length() - lps.back()`.  
 
 ---
 
