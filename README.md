@@ -35,6 +35,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
    - [Day 17: First Non Repeating Character](#day-17-first-non-repeating-character)
    - [Day 18: Search Pattern](#day-18-search-pattern)  
   - [Day 19: Minimum Characters to Be Added at Front to Make String Palindrome](#day-19-minimum-characters-to-be-added-at-front-to-make-string-palindrome)  
+  - [Day 20: Strings Rotations of Each Other](#day-20-strings-rotations-of-each-other)
 - [Conclusion](#conclusion)
 
 ---
@@ -398,6 +399,28 @@ Given a string `S`, find the first non-repeating character in it and return it. 
 2. Form `combined = s + "#" + rev`.  
 3. Compute LPS array for `combined`.  
 4. Answer = `s.length() - lps.back()`.  
+
+---
+
+### Day 20: Strings Rotations of Each Other  
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/string-gfg-160/problem/check-if-strings-are-rotations-of-each-other-or-not-1587115620)
+
+**Problem:**  
+Given two strings `s1` and `s2` of equal length, determine if `s2` is a rotation of `s1`.
+
+**Approach (PseudoCode):**  
+1. **Length Check:**  
+   - If `s1.length() != s2.length()`, return `false`.  
+2. **Concatenate:**  
+   - `doubled = s1 + s1`  
+3. **KMP Search:**  
+   - **Compute LPS** array for pattern `s2`.  
+   - **Scan** through `doubled` with pointers `i` (text) and `j` (pattern):  
+     - If characters match, increment both.  
+     - On full pattern match (`j == s2.length()`), return `true`.  
+     - On mismatch with `j > 0`, fallback `j = lps[j-1]`; else increment `i`.  
+4. **Result:**  
+   - If no match found, return `false`.  
 
 ---
 
