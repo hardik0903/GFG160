@@ -36,6 +36,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
    - [Day 18: Search Pattern](#day-18-search-pattern)  
   - [Day 19: Minimum Characters to Be Added at Front to Make String Palindrome](#day-19-minimum-characters-to-be-added-at-front-to-make-string-palindrome)  
   - [Day 20: Strings Rotations of Each Other](#day-20-strings-rotations-of-each-other)
+  - [Day 21: Sort 0's, 1's, 2's](#day-21-sort-colors)
 - [Conclusion](#conclusion)
 
 ---
@@ -421,6 +422,21 @@ Given two strings `s1` and `s2` of equal length, determine if `s2` is a rotation
      - On mismatch with `j > 0`, fallback `j = lps[j-1]`; else increment `i`.  
 4. **Result:**  
    - If no match found, return `false`.  
+
+---
+
+### Day 21: Sort Colors
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/sort-an-array-of-0s-1s-and-2s4231)
+
+**Problem:**
+Given Array consisting of 0's, 1's, 2's and we need to sort them in ascending order.
+
+**Approach (Pseudocode):**
+1.Initialize low, mid, high
+2.Use switch case aproach to replace multiple if-case and give 3 cases:
+   2.1 if 0: swap with low, and move low and mid
+   2.2 if 1: nothing here just move mid
+   2.3 if 2: swap with high, and move high not mid
 
 ---
 
