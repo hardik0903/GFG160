@@ -37,6 +37,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 19: Minimum Characters to Be Added at Front to Make String Palindrome](#day-19-minimum-characters-to-be-added-at-front-to-make-string-palindrome)  
   - [Day 20: Strings Rotations of Each Other](#day-20-strings-rotations-of-each-other)
   - [Day 21: Sort 0's, 1's, 2's](#day-21-sort-colors)
+  - [Day 22: Find H-Index](#day-22-Find-H-Index)
 - [Conclusion](#conclusion)
 
 ---
@@ -437,6 +438,19 @@ Given Array consisting of 0's, 1's, 2's and we need to sort them in ascending or
    2.1 if 0: swap with low, and move low and mid
    2.2 if 1: nothing here just move mid
    2.3 if 2: swap with high, and move high not mid
+
+---
+
+### Day 22: Find H Index
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/find-h-index--165609)
+
+**Problem:**
+Given Array we need to find H-Index with H-Number of citations
+
+**Approach (Pseudocode):**
+1.Sort the array of citations in descending order.
+2.Scan the sorted list and look for the last position where >=i+1 condition exist.
+3.Return that i+1.
 
 ---
 
