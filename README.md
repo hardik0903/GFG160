@@ -38,6 +38,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 20: Strings Rotations of Each Other](#day-20-strings-rotations-of-each-other)
   - [Day 21: Sort 0's, 1's, 2's](#day-21-sort-colors)
   - [Day 22: Find H-Index](#day-22-Find-H-Index)
+  - [Day 23: Count Inversion](#day-23-count-inversion)
 - [Conclusion](#conclusion)
 
 ---
@@ -451,6 +452,18 @@ Given Array we need to find H-Index with H-Number of citations
 1.Sort the array of citations in descending order.
 2.Scan the sorted list and look for the last position where >=i+1 condition exist.
 3.Return that i+1.
+
+---
+
+### Day 23: Count Inversion
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/inversion-of-array-1587115620)
+**Problem:**
+Given Array We need to find elements more than its next ones.
+
+**Approach (Pseudocode):**
+1.Divide the array using Merge Sort until each subarray has one element.
+2.While merging, count inversions when an element from the right subarray is smaller than one from the left (since it means all remaining left-side elements form inversions).
+3.Merge and count inversions recursively, summing them to get the total inversion count.
 
 ---
 
