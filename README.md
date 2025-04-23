@@ -1,4 +1,5 @@
-# 👋 Hello, I'm Hardik
+# 👋 Hello, I'm Hardik.
+
 
 Welcome to my journey of completing the **GFG160 Days Challenge**. This repository documents my experiences, solutions, and learnings as I tackle various coding challenges every day. 🚀
 
