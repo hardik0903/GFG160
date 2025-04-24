@@ -1,4 +1,5 @@
-# 👋 Hello, I'm Hardik
+# 👋 Hello, I'm Hardik.
+
 
 Welcome to my journey of completing the **GFG160 Days Challenge**. This repository documents my experiences, solutions, and learnings as I tackle various coding challenges every day. 🚀
 
@@ -447,6 +448,7 @@ Given Array consisting of 0's, 1's, 2's and we need to sort them in ascending or
 
 
 **Problem:**
+
 Given Array we need to find H-Index with H-Number of citations
 
 **Approach (Pseudocode):**
