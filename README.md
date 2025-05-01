@@ -15,6 +15,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
 
 ## 📅 Table of Contents
 
+
 - [Introduction](#introduction)
 - [Challenge Overview](#challenge-overview)
   - [Day 1: Second Largest Element](#day-1-second-largest-element)
