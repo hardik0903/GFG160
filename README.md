@@ -43,16 +43,17 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 21: Sort 0's, 1's, 2's](#day-21-sort-colors)
   - [Day 22: Find H-Index](#day-22-Find-H-Index)
   - [Day 23: Count Inversion](#day-23-count-inversion)
+  - [Day 24: Overlapping Intervals](#day-24-overlapping-intervals)
+  - [Day 25: Insert Intervals](#day-25-insert-intervals)
+  - [Day 26: Non-Overlapping Intervals](#day-26-non-overlapping-intervals)
+  - [Day 27: Merge Without Extra Space](#day-27-merge-without-extra-space)
   - [Day 28: Number of Occurrences](#day-28-number-of-occurrences)
   - [Day 29: Find Minimum in Rotated Sorted Array](#day-29-find-minimum-in-rotated-sorted-array)
   - [Day 30: Search in Sorted Rotated Array](#day-30-search-in-sorted-rotated-array)
   - [Day 31: Peak Element](#day-31-peak-element)
   - [Day 32: K-th of Two Arrays](#day-32-k-th-of-two-arrays)
   - [Day 33: Aggressive Cows](#day-33-aggressive-cows)
-  - [Day 24: Overlapping Intervals](#day-24-overlapping-intervals)
-  - [Day 25: Insert Intervals](#day-25-insert-intervals)
-  - [Day 26: Non-Overlapping Intervals](#day-26-non-overlapping-intervals)
-  - [Day 27: Merge Without Extra Space](#day-27-merge-without-extra-space)
+  
 
 - [Conclusion](#conclusion)
 
