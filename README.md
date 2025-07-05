@@ -13,6 +13,8 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
 
 ---
 
+
+
 ## 📅 Table of Contents
 
 
@@ -41,6 +43,13 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 21: Sort 0's, 1's, 2's](#day-21-sort-colors)
   - [Day 22: Find H-Index](#day-22-Find-H-Index)
   - [Day 23: Count Inversion](#day-23-count-inversion)
+  - [Day 28: Number of Occurrences](#day-28-number-of-occurrences)
+  - [Day 29: Find Minimum in Rotated Sorted Array](#day-29-find-minimum-in-rotated-sorted-array)
+  - [Day 30: Search in Sorted Rotated Array](#day-30-search-in-sorted-rotated-array)
+  - [Day 31: Peak Element](#day-31-peak-element)
+  - [Day 32: K-th of Two Arrays](#day-32-k-th-of-two-arrays)
+  - [Day 33: Aggressive Cows](#day-33-aggressive-cows)
+  -
 - [Conclusion](#conclusion)
 
 ---
@@ -468,6 +477,86 @@ Given Array We need to find elements more than its next ones.
 1.Divide the array using Merge Sort until each subarray has one element.
 2.While merging, count inversions when an element from the right subarray is smaller than one from the left (since it means all remaining left-side elements form inversions).
 3.Merge and count inversions recursively, summing them to get the total inversion count.
+
+---
+
+## Day 28: Number of Occurrences
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/number-of-occurrence2259)
+*Problem:* Given a sorted array arr and a target value, find the number of times target appears in the array.
+
+*Approach (PseudoCode):*
+
+- Use binary search (lower_bound) to find the index of the first occurrence of target.
+- Use binary search (upper_bound) to find the index of the first element strictly greater than target.
+- The number of occurrences is the difference between these two indices.
+
+---
+
+## Day 29: Find Minimum in Rotated Sorted Array
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/minimum-element-in-a-sorted-and-rotated-array3611)
+*Problem:* Find the minimum element in a sorted array that has been rotated at some unknown pivot.
+
+*Approach (PseudoCode):*
+
+- Apply binary search.  
+- If the current segment is sorted (arr[low] <= arr[high]), arr[low] is the minimum.  
+- Otherwise, consider mid:  
+  - If arr[mid] < arr[low], the minimum is in the left half (including mid).  
+  - If arr[mid] >= arr[low], the minimum must be in the right half.
+
+---
+
+## Day 30: Search in Sorted Rotated Array
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/search-in-a-rotated-array4618)
+*Problem:* Search for a given key in a sorted array that has been rotated at some unknown pivot.
+
+*Approach (PseudoCode):*
+
+- Perform a modified binary search to navigate the rotated array.  
+- At each step, identify which half of the array (left or right of mid) is sorted.  
+- If key falls within the range of the sorted half, search there; otherwise, search in the unsorted half.
+
+---
+
+## Day 31: Peak Element
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/peak-element)
+*Problem:* Find an index of a peak element in an array, where a peak is strictly greater than its neighbors.
+
+*Approach (PseudoCode):*
+
+- Use binary search.  
+- Handle array boundaries by conceptually treating elements outside bounds as negative infinity.  
+- If arr[mid] is greater than both its left and right neighbors, mid is a peak.  
+- Adjust the search to the left or right based on whether the right neighbor is larger (move right) or the left neighbor is larger/equal (move left).
+
+---
+
+## Day 32: K-th of Two Arrays
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/k-th-element-of-two-sorted-array1317)
+*Problem:* Find the K-th smallest element in two sorted arrays, arr1 and arr2.
+
+*Approach (PseudoCode):*
+
+- Ensure arr1 is the smaller array to optimize binary search.  
+- Perform binary search on possible partitions of arr1.  
+- Calculate the corresponding partition in arr2 such that the total number of elements in the left partitions sums to K.  
+- Adjust the binary search boundaries until the elements in the left partitions are all less than or equal to the elements in the right partitions, then the K-th element is found.
+-
+
+---
+
+## Day 33: Aggressive Cows
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/aggressive-cows)
+*Problem:* Given N stalls and K cows, place cows to maximize the minimum distance between any two.
+
+*Approach (PseudoCode):*
+
+- Sort the stalls array.  
+- The problem can be solved by binary searching on the answer (the minimum distance).  
+- Define a helper function canPlace(distance):  
+  - It greedily places cows, returning true if K cows can be placed with distance as the minimum separation.  
+- In the binary search, if canPlace(mid_distance) is true, try for a larger distance; otherwise, try a smaller one.
+
 
 ---
 
