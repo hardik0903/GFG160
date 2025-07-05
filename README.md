@@ -49,7 +49,11 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 31: Peak Element](#day-31-peak-element)
   - [Day 32: K-th of Two Arrays](#day-32-k-th-of-two-arrays)
   - [Day 33: Aggressive Cows](#day-33-aggressive-cows)
-  -
+  - [Day 24: Overlapping Intervals](#day-24-overlapping-intervals)
+  - [Day 25: Insert Intervals](#day-25-insert-intervals)
+  - [Day 26: Non-Overlapping Intervals](#day-26-non-overlapping-intervals)
+  - [Day 27: Merge Without Extra Space](#day-27-merge-without-extra-space)
+
 - [Conclusion](#conclusion)
 
 ---
@@ -477,6 +481,51 @@ Given Array We need to find elements more than its next ones.
 1.Divide the array using Merge Sort until each subarray has one element.
 2.While merging, count inversions when an element from the right subarray is smaller than one from the left (since it means all remaining left-side elements form inversions).
 3.Merge and count inversions recursively, summing them to get the total inversion count.
+
+---
+
+## Day 24: Overlapping Intervals
+
+*Problem:* Given a collection of intervals, merge all overlapping intervals.
+
+*Approach (PseudoCode):*
+
+- Sort the intervals based on their starting times.
+- Iterate through sorted intervals, merging the current with the last merged interval if they overlap.
+- If no overlap, add the current interval as a new merged interval.
+
+---
+
+## Day 25: Insert Intervals
+
+*Problem:* Given a set of non-overlapping intervals and a new interval, insert the new interval into the intervals such that the intervals remain sorted and non-overlapping.
+
+*Approach (PseudoCode):*
+
+---
+
+## Day 26: Non-Overlapping Intervals
+
+*Problem:* Given a collection of intervals, find the minimum number of intervals to remove to make the rest of the intervals non-overlapping.
+
+*Approach (PseudoCode):*
+
+- Sort the intervals by their ending times.
+- Iterate, counting non-overlapping intervals by greedily picking the one with the earliest end time.
+- The minimum removals needed is the total number of intervals minus the maximum count of non-overlapping intervals.
+
+---
+
+## Day 27: Merge Without Extra Space
+
+*Problem:* Given two sorted arrays a and b, merge them into a single sorted array without using any extra space.
+
+*Approach (PseudoCode):*
+
+- Use two pointers, one starting from the end of a and one from the beginning of b.
+- Swap elements if a[i] is greater than b[j], then move pointers.
+- After the loop, sort both arrays individually to finalize the merge.
+-
 
 ---
 
