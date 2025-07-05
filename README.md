@@ -460,7 +460,6 @@ Given Array consisting of 0's, 1's, 2's and we need to sort them in ascending or
 ### Day 22: Find H Index
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/find-h-index--165609)
 
-
 **Problem:**
 
 Given Array we need to find H-Index with H-Number of citations
@@ -474,6 +473,7 @@ Given Array we need to find H-Index with H-Number of citations
 
 ### Day 23: Count Inversion
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/inversion-of-array-1587115620)
+
 **Problem:**
 Given Array We need to find elements more than its next ones.
 
@@ -485,6 +485,7 @@ Given Array We need to find elements more than its next ones.
 ---
 
 ## Day 24: Overlapping Intervals
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/overlapping-intervals--170633)
 
 *Problem:* Given a collection of intervals, merge all overlapping intervals.
 
@@ -497,6 +498,7 @@ Given Array We need to find elements more than its next ones.
 ---
 
 ## Day 25: Insert Intervals
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/insert-interval-1666733333)
 
 *Problem:* Given a set of non-overlapping intervals and a new interval, insert the new interval into the intervals such that the intervals remain sorted and non-overlapping.
 
@@ -505,6 +507,7 @@ Given Array We need to find elements more than its next ones.
 ---
 
 ## Day 26: Non-Overlapping Intervals
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/non-overlapping-intervals)
 
 *Problem:* Given a collection of intervals, find the minimum number of intervals to remove to make the rest of the intervals non-overlapping.
 
@@ -517,6 +520,7 @@ Given Array We need to find elements more than its next ones.
 ---
 
 ## Day 27: Merge Without Extra Space
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/merge-two-sorted-arrays-1587115620)
 
 *Problem:* Given two sorted arrays a and b, merge them into a single sorted array without using any extra space.
 
@@ -531,6 +535,7 @@ Given Array We need to find elements more than its next ones.
 
 ## Day 28: Number of Occurrences
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/number-of-occurrence2259)
+
 *Problem:* Given a sorted array arr and a target value, find the number of times target appears in the array.
 
 *Approach (PseudoCode):*
@@ -543,6 +548,7 @@ Given Array We need to find elements more than its next ones.
 
 ## Day 29: Find Minimum in Rotated Sorted Array
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/minimum-element-in-a-sorted-and-rotated-array3611)
+
 *Problem:* Find the minimum element in a sorted array that has been rotated at some unknown pivot.
 
 *Approach (PseudoCode):*
@@ -557,6 +563,7 @@ Given Array We need to find elements more than its next ones.
 
 ## Day 30: Search in Sorted Rotated Array
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/search-in-a-rotated-array4618)
+
 *Problem:* Search for a given key in a sorted array that has been rotated at some unknown pivot.
 
 *Approach (PseudoCode):*
@@ -569,6 +576,7 @@ Given Array We need to find elements more than its next ones.
 
 ## Day 31: Peak Element
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/peak-element)
+
 *Problem:* Find an index of a peak element in an array, where a peak is strictly greater than its neighbors.
 
 *Approach (PseudoCode):*
@@ -582,6 +590,7 @@ Given Array We need to find elements more than its next ones.
 
 ## Day 32: K-th of Two Arrays
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/k-th-element-of-two-sorted-array1317)
+
 *Problem:* Find the K-th smallest element in two sorted arrays, arr1 and arr2.
 
 *Approach (PseudoCode):*
@@ -596,6 +605,7 @@ Given Array We need to find elements more than its next ones.
 
 ## Day 33: Aggressive Cows
 (https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/aggressive-cows)
+
 *Problem:* Given N stalls and K cows, place cows to maximize the minimum distance between any two.
 
 *Approach (PseudoCode):*
