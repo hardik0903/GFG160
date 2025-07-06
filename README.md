@@ -53,6 +53,7 @@ Welcome to my journey of completing the **GFG160 Days Challenge**. This reposito
   - [Day 31: Peak Element](#day-31-peak-element)
   - [Day 32: K-th of Two Arrays](#day-32-k-th-of-two-arrays)
   - [Day 33: Aggressive Cows](#day-33-aggressive-cows)
+  - [Day 34: Allocate Minimum Pages](#day-34-allocate-minimum-pages)
   
 
 - [Conclusion](#conclusion)
@@ -619,6 +620,17 @@ Given Array We need to find elements more than its next ones.
 
 
 ---
+
+## Day 34: Allocate Minimum Pages
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/allocate-minimum-number-of-pages0937)
+
+*Problem:* Minimize the maximum number of pages a student has when allocating contiguous books from an array to k students.
+
+**Approach (PseudoCode):*
+
+- The problem can be solved using binary search on the range of possible maximum pages a student can have (from the largest single book to the total sum of all books).
+- A helper function feasible checks if it's possible to allocate books such that no student exceeds maxPages with k students.
+- The binary search repeatedly narrows down the range based on the feasible function's result to find the minimum possible maximum.
 
 ## Conclusion
 
