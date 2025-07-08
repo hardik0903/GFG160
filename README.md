@@ -636,7 +636,7 @@ Given Array We need to find elements more than its next ones.
 ---
 
 ## Day 35:Kth Missing Positive Number
-()
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/kth-missing-positive-number-in-a-sorted-array)
 
 *Problem:* Find the Kth missing positive number in a sorted array.
 
@@ -645,6 +645,21 @@ Given Array We need to find elements more than its next ones.
 -Apply binary search on array indices.
 -Calculate missing = arr[mid] - (mid + 1) for current mid.
 -Adjust search: low if missing < k, high otherwise. Result is k + low.
+
+---
+
+## Day 36:Spirally Traverse a Matrix
+(https://www.geeksforgeeks.org/batch/gfg-160-problems/track/matrix-gfg-160/problem/spirally-traversing-a-matrix-1587115621)
+
+*Problem:* Traverse a given 2D matrix in a spiral order
+
+**Approach (PseudoCode):* 
+
+-Use four pointers (top, bottom, left, right) to define the current boundaries of the matrix.
+-Iterate through the matrix layer by layer, moving the boundaries inwards after each traversal direction.
+-Continue until the top boundary crosses the bottom, or the left boundary crosses the right
+
+---
 
 ## Conclusion
 
